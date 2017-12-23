@@ -1,3 +1,31 @@
 #!/usr/bin/env node
 
-process.exit(1);
+const program = require( "commander" );
+const async = require( "async" );
+
+program.version( "0.0.1" )
+	.option( "-i, --initial [initial]", "The initial script to exectute" )
+	.option( "-l, --link [link]", "A link in the chain" )
+	.parse( process.argv );
+
+const bail = function( ){
+	program.outputHelp();
+	process.exit(1);
+};
+
+async.waterfall( [ function( cb ){
+
+	// Ensure inital exists and is
+	// executable.
+	return cb( null );
+
+}, function( cb ){
+
+	// Ensure that there is at least a single link
+	return cb( null );
+
+} ], function( err ){
+	if( err ){
+		return bail( err );
+	}
+} );

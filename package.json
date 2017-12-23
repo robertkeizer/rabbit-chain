@@ -20,6 +20,7 @@
 		"mocha": "^4.0.1"
 	},
 	"dependencies": {
+		"async": "^2.6.0",
 		"commander": "^2.12.2",
 		"rabbit-pipe": "^0.2.5",
 		"uuid": "^3.1.0"

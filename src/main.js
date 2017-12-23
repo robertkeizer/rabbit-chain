@@ -1,3 +1,5 @@
+const RabbitPipe = require( "rabbit-pipe" );
+
 const RabbitChain = function( ){
 	
 };
