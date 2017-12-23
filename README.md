@@ -1,2 +1,3 @@
-# rabbit-chain
-Chain together tasks using rabbit queues.
+## Overview
+
+Still in active development. Do not use.

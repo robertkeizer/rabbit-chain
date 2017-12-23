@@ -1,4 +1,27 @@
 {
 	"version": "0.0.1",
-	"name": "rabbit-chain"
+	"name": "rabbit-chain",
+	"description": "",
+	"keywords": "",
+	"main": "src/main.js",
+	"scripts": {
+		"test": "./node_modules/mocha/bin/mocha -t 5000"
+	},
+	"license": "MIT",
+	"bin": {
+		"rabbit-chain": "./bin/rabbit-chain"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/robertkeizer/rabbit-chain.git"
+	},
+	"devDependencies": {
+		"assert": "^1.4.1",
+		"mocha": "^4.0.1"
+	},
+	"dependencies": {
+		"commander": "^2.12.2",
+		"rabbit-pipe": "^0.2.5",
+		"uuid": "^3.1.0"
+	}
 }
